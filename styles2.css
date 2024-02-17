@@ -1,0 +1,147 @@
+body {
+    background-color: #bec3cc;
+}
+
+/* grab ships from here to place on grid */
+.ships-container {
+    background-color: #b4ffef;
+    width: 525px;
+    height: 150px;
+    border: 2px dashed black;
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.display-destroyer {
+    width: 50px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.display-submarine {
+    width: 75px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.display-cruiser {
+    width: 75px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.display-battleship {
+    width: 100px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.display-carrier {
+    width: 125px;
+    height: 25px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.destroyer {
+    background-color: #bc79c9;
+}
+
+.submarine {
+    background-color: #9b9bcb;
+}
+
+.cruiser {
+    background-color: #98a48c;
+}
+
+.battleship {
+    background-color: #ffa484;
+}
+
+.carrier {
+    background-color: #f4848c;
+}
+
+#computer .destroyer,
+#computer .submarine,
+#computer .cruiser,
+#computer .battleship,
+#computer .carrier {
+    background-color: #f0e9e9;
+}
+
+/* Button to rotate ships */
+#rotate-button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+/* Button to start game */
+#start-button {
+    background-color: #67ff00;
+    padding: 10px 15px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#rotate-button:hover {
+    background-color: #2980b9;
+    cursor: pointer;
+}
+
+#start-button:hover {
+    background-color: #62db0f;
+    cursor: pointer;
+}
+
+#gamesboard-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.hit {
+    background-color: red !important;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.miss {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+#computer .sunk-ship {
+    background-color: darkred !important; /* Replace 'your-desired-color' with the desired color */
+}
