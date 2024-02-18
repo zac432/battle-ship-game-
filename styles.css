@@ -1,10 +1,21 @@
+#game-title {
+    text-align: center;
+    color: #ffffff; /* White text color */
+    background-color: #2c3e50; /* Dark blue background */
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif; /* Use Arial or any sans-serif font */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  }
+
+
 body {
-    background-color: #bec3cc;
+    background-color: #df89a9;
 }
 
 /* grab ships from here to place on grid */
 .ships-container {
-    background-color: #b4ffef;
+    background-color: rgb(69, 232, 232);
     width: 525px;
     height: 150px;
     border: 2px dashed black;
@@ -49,23 +60,23 @@ body {
 }
 
 .destroyer {
-    background-color: #bc79c9;
+    background-color: #ff0040;
 }
 
 .submarine {
-    background-color: #9b9bcb;
+    background-color:  #ff0040;
 }
 
 .cruiser {
-    background-color: #98a48c;
+    background-color:  #ff0040;
 }
 
 .battleship {
-    background-color: #ffa484;
+    background-color:  #ff0040;
 }
 
 .carrier {
-    background-color: #f4848c;
+    background-color:  #ff0040;
 }
 
 #computer .destroyer,
@@ -78,31 +89,58 @@ body {
 
 /* Button to rotate ships */
 #rotate-button {
-    background-color: #3498db;
-    color: white;
+    background-color: #176b48;
+    color: wheat;
     padding: 10px 15px;
     border: 2px solid black;
     font-size: 15px;
     font-weight: bold;
     margin: 0 20px;
+    position: relative;
+    top: -250px;
+    right: 20px;
 }
 
-/* Button to start game */
+
 #start-button {
-    background-color: #67ff00;
-    padding: 10px 15px;
+    background-color: #a61717;
+    color: wheat;
+    padding: 20px 25px;
     border: 2px solid black;
     font-size: 15px;
     font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+
+/* Button to restart game */
+#restart-game-button {
+    background-color: #a61717;
+    color: wheat;
+    padding: 20px 25px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 400px;
+    left: 20px;
 }
 
 #rotate-button:hover {
-    background-color: #2980b9;
+    background-color: #556169;
     cursor: pointer;
 }
 
 #start-button:hover {
-    background-color: #62db0f;
+    background-color: #556169;
+    cursor: pointer;
+}
+
+/* Button to restart game hover */
+
+#restart-game-button:hover {
+    background-color: #556169;
     cursor: pointer;
 }
 
@@ -127,21 +165,21 @@ body {
 }
 
 .hit {
-    background-color: red !important;
-    color: white;
+    background-color: rgb(0, 255, 153) !important;
+    color: grey;
     font-family: sans-serif;
     font-size: 2em;
     text-align: center;
 }
 
 .miss {
-    background-color: black;
-    color: white;
+    background-color: #add8e6;;
+    color: grey;
     font-family: sans-serif;
-    font-size: 1em;
+    font-size: 2em;
     text-align: center;
 }
 
 #computer .sunk-ship {
-    background-color: darkred !important; /* Replace 'your-desired-color' with the desired color */
+    background-color: #e74c3c!important; 
 }
