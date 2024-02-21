@@ -1,2 +1,1 @@
-# BAT_S
-my first repo, a BS game
+HTML, CSS, and JAVASCRIPT project about a battle ship game 
