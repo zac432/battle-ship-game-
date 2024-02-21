@@ -1,19 +1,20 @@
+/* Style for the game title */
 #game-title {
     text-align: center;
-    color: #ffffff; /* White text color */
-    background-color: #2c3e50; /* Dark blue background */
+    color: #ffffff; 
+    background-color: #2c3e50; 
     padding: 20px;
     margin-bottom: 20px;
-    font-family: 'Arial', sans-serif; /* Use Arial or any sans-serif font */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-  }
+    font-family: 'Arial', sans-serif; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
 
 
 body {
-    background-color: #df89a9;
+    background-color: #df89a9; /* Light pink background color */
 }
 
-/* grab ships from here to place on grid */
+/* Container for displaying ships */
 .ships-container {
     background-color: rgb(69, 232, 232);
     width: 525px;
@@ -23,7 +24,7 @@ body {
     align-items: center;
     margin: 50px 0;
 }
-
+/* Styling for individual ship displays */
 .display-destroyer {
     width: 50px;
     height: 25px;
@@ -59,6 +60,7 @@ body {
     border: 1px solid black;
 }
 
+/* Styling for ships on the game board */
 .destroyer {
     background-color: #ff0040;
 }
@@ -79,15 +81,16 @@ body {
     background-color:  #ff0040;
 }
 
+/* Fallback color for ships on the computer's board, making them less visible */
 #computer .destroyer,
 #computer .submarine,
 #computer .cruiser,
 #computer .battleship,
 #computer .carrier {
-    background-color: #f0e9e9;
+    background-color: #f0e9e9; /* Light grey color */
 }
 
-/* Button to rotate ships */
+/* Styles for the rotate, start, and restart buttons */
 #rotate-button {
     background-color: #176b48;
     color: wheat;
@@ -110,11 +113,11 @@ body {
     font-size: 15px;
     font-weight: bold;
     position: absolute;
-    top: 300px;
+    top: 600px;
     left: 20px;
 }
 
-/* Button to restart game */
+
 #restart-game-button {
     background-color: #a61717;
     color: wheat;
@@ -123,32 +126,36 @@ body {
     font-size: 15px;
     font-weight: bold;
     position: absolute;
-    top: 400px;
+    top: 700px;
     left: 20px;
 }
 
+/* rotate button hover game  */
 #rotate-button:hover {
     background-color: #556169;
     cursor: pointer;
 }
 
+/* start button hover game  */
 #start-button:hover {
     background-color: #556169;
     cursor: pointer;
 }
 
-/* Button to restart game hover */
 
+/* restart button hover */
 #restart-game-button:hover {
     background-color: #556169;
     cursor: pointer;
 }
 
+/* Container for the game boards */
 #gamesboard-container {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* Styles for each block on the game boards */
 .game-board {
     width: 500px;
     height: 500px;
@@ -182,4 +189,98 @@ body {
 
 #computer .sunk-ship {
     background-color: #e74c3c!important; 
+}
+
+/* animations for the grids/cells when hit / miss  */
+@keyframes hitAnimation {
+    0% { background-color: red; }
+    100% { background-color: rgb(0, 255, 153); }
+  }
+  
+  .hit {
+    animation: hitAnimation 1s ease-out forwards;
+  }
+  
+  @keyframes missAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); background-color: #add8e6; }
+    100% { transform: scale(1); }
+  }
+  
+  .miss {
+    animation: missAnimation 1s ease-in-out forwards;
+  }
+
+ 
+  /* image logo container*/
+  #logo-container {
+    position: absolute;
+    right: 10px; 
+    top: 10px; 
+    width: 15%; 
+    z-index: 10; 
+  }
+  
+  #battleship-logo {
+    width: 100%; 
+    height: auto; 
+  }
+ 
+
+  
+  
+  /* game info styles*/
+  #game-info, #how-to-play {
+    padding-top: 60px; 
+  }
+
+
+  #how-to-play {
+    font-size: larger; 
+  }
+  
+  #how-to-play ul {
+    font-size: 1.2em; 
+  }
+  
+  #how-to-play li {
+    margin-bottom: 10px; 
+  }
+  
+  /* Style for title */
+#welcome-title {
+    color: #080349; 
+    text-align: center; 
+    font-size: 3em; 
+    position: absolute; 
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    width: 100%; 
+    z-index: 1; 
+  }
+
+ /* Style for grid titles */
+.grid-title {
+    font-size: 2em; 
+    color: #1a1c1d; 
+    display: inline-block; 
+    margin: 10px; 
+  }
+  
+  
+  #your-grid-title {
+    position: absolute;
+    top: 1014px; 
+    left: calc(40% - 120px); 
+  }
+  
+  #enemy-grid-title {
+    position: absolute;
+    top: 1014px; 
+    left: calc(70% + 70px); 
+  }
+
+  #player-stats, #computer-stats {
+    font-size: 1.2em; 
 }
