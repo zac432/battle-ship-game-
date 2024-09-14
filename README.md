@@ -20,15 +20,24 @@ Navigate to the project directory:
 cd battleship-game
 Open the HTML file:
 You can open the index.html file in a web browser to start playing the game.
+
 How to Play
+
 Placing Ships: Drag your ships to desired positions on your grid. Use the "Rotate" button to toggle their orientation.
 Starting the Game: Press the "Start Game" button once all ships are placed.
 Game Play: Click on the enemy grid to select where to hit. The game will indicate whether it was a hit or miss.
 Winning the Game: The first player to sink all of the opponent's ships wins the game.
-Game Controls
+
+Game Controls:
+
 Rotate Button: Rotates the selected ship.
+
 Start Game Button: Starts the game session.
+
 Restart Game Button: Resets the game to allow a new session to start.
+
+
+
 Technologies Used
 HTML
 CSS
