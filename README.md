@@ -1,4 +1,6 @@
 Battleship Game
+
+
 Welcome to the Battleship Game, a classic naval strategy game where you try to sink your opponent's fleet of ships before they sink yours. This web-based version brings the excitement directly to your browser, complete with sound effects and interactive gameplay.
 
 Table of Contents
