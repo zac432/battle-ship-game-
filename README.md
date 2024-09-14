@@ -15,7 +15,7 @@ Setup
 
 To run the Battleship Game on your local machine, follow these steps Clone the repository:
 
-git clone https://github.com/yourusername/battle-ship-game.git
+git clone https://github.com/yourusername/battle-ship-game-.git
 
 Navigate to the project directory:
 
