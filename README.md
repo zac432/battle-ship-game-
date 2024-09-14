@@ -3,15 +3,7 @@ Battleship Game
 
 Welcome to the Battleship Game, a classic naval strategy game where you try to sink your opponent's fleet of ships before they sink yours. This web-based version brings the excitement directly to your browser, complete with sound effects and interactive gameplay.
 
-Table of Contents
-Introduction
-Features
-Setup
-How to Play
-Game Controls
-Technologies Used
-Contributing
-Introduction
+
 The Battleship Game is designed to replicate the traditional board game where two players place a fleet of ships on a grid and attempt to hit the opponent's ships by guessing their locations.
 
 Features
@@ -23,12 +15,8 @@ Setup
 To run the Battleship Game on your local machine, follow these steps:
 
 Clone the repository:
-bash
-Copy code
 git clone https://github.com/yourusername/battleship-game.git
 Navigate to the project directory:
-bash
-Copy code
 cd battleship-game
 Open the HTML file:
 You can open the index.html file in a web browser to start playing the game.
