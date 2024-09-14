@@ -13,8 +13,7 @@ Sound Effects: Interactive sounds play for hits, misses, and game start.
 Responsive Design: The game is fully responsive and can be played on desktops as well as mobile devices.
 Setup
 
-To run the Battleship Game on your local machine, follow these steps:
-Clone the repository:
+To run the Battleship Game on your local machine, follow these steps Clone the repository:
 
 git clone https://github.com/yourusername/battleship-game.git
 
