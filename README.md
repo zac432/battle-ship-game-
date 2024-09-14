@@ -12,13 +12,18 @@ Rotate Ships: Ships can be rotated to be placed horizontally or vertically.
 Sound Effects: Interactive sounds play for hits, misses, and game start.
 Responsive Design: The game is fully responsive and can be played on desktops as well as mobile devices.
 Setup
-To run the Battleship Game on your local machine, follow these steps:
 
+To run the Battleship Game on your local machine, follow these steps:
 Clone the repository:
+
 git clone https://github.com/yourusername/battleship-game.git
+
 Navigate to the project directory:
+
 cd battleship-game
+
 Open the HTML file:
+
 You can open the index.html file in a web browser to start playing the game.
 
 How to Play
